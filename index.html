@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>tomgdow</title>
-    <link rel='icon' type='image/x-icon' href='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'>
-    <style>
-      div.container {
-        width: 80%;
-        background-color:red;
-        margin:auto;
-      }
+  <link rel='icon' type='image/x-icon' href='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'>
+  <style>
+    div.container {
+      width: 80%;
+      /* background-color: red; */
+      margin: auto;
+      height: 100vh;
+    }
 
-      div.grid-container {
-        display:grid;
-        grid-template-columns: auto auto auto;
-        background-color: #2196F3;
-      }
-    </style>
+    div.grid-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      /* background-color: #2196F3; */
+    }
+
+    div.grid-item-1 {
+      grid-column: 1/11;
+      grid-row: 1;
+      background-color: #000;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      justify-content: center;
+    }
+
+    .banner-item-1 {
+      grid-column: 1/2;
+    }
+
+    div.banner-item-2 {
+      color: white;
+      grid-column: 3/11;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size: 1.5rem;
   
+    }
+    .grid-item-2 {
+      grid-column: 1/2;
+    }
+    .grid-item-3 {
+      grid-column: 2/9;
+    }
+    .grid-item-4 {
+      grid-column:9/11;
+    }
+  </style>
+
 </head>
+
 <body>
   <div class="container">
     <div class="grid-container">
-      <div class="grid-item">Item-1</div>
-      <div class="grid-item">Item-2</div>
-      <div class="grid-item">Item-3</div>
-      <div class="grid-item">Item-4</div>
-      <div class="grid-item">Item-5</div>
-      <div class="grid-item">Item-6</div>
-      <div class="grid-item">Item-7</div>
-      <div class="grid-item">Item-8</div>
-      <div class="grid-item">Item-9</div>
+      <div class="grid-item-1">
+        <div class="banner-container">
+          <div class="banner-item-1">
+            <img src='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'
+            alt="gravatar image of tomgdow">
+          </div>
+        </div>
+        <div class="banner-item-2">Welcome from tomgdow</div>
+      </div>
+      <div class="grid-item-2"></div>
+      <div class="grid-item-3">
+        <h1>Some Sites</h1>
+        <div>
+          <a href="https://rme.tomgdow.com">rme (CSS Tips)</a>
+        </div>
+        <div>
+          <a href="http://sasstips.tomgdow.com">Sass Tips</a>
+        </div>
+        <div>
+          <a href="https://testwebsite.tomgdow.com">testwebsite</a>
+        </div>
+        <div>
+          <a href="https://github.com/tomGdow">github (tomgdow)</a>
+        </div>
+        <div>
+          <a href="https://tomgdowtips.firebaseapp.com/">tomgdowtips</a>
+        </div>
+        <div>
+          <a href="https://fuzzy.tomgdow.com/">Fuzzy Sort</a>
+        </div>
+        <div>
+          <a href="https://tomgdow.github.io/basicAjaxExample/">Simple Ajax Request</a>
+        </div>
+      </div>
+      <div class="grid-item-4"></div>
     </div>
   </div>
 </body>
+
 </html>
