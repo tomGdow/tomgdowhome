@@ -7,6 +7,10 @@
   <title>tomgdow</title>
   <link rel='icon' type='image/x-icon' href='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'>
   <style>
+ :root {
+   --primary-green: #18836f;
+   --primary-orange: orange;
+ }
     div.container {
       width: 80%;
       /* background-color: red; */
@@ -27,6 +31,7 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       justify-content: center;
+      max-height: 40px;
     }
 
     .banner-item-1 {
@@ -36,20 +41,42 @@
     div.banner-item-2 {
       color: white;
       grid-column: 3/11;
-      display:flex;
-      justify-content:center;
-      align-items:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 1.5rem;
-  
+
     }
+
     .grid-item-2 {
       grid-column: 1/2;
     }
+
     .grid-item-3 {
       grid-column: 2/9;
     }
+
     .grid-item-4 {
-      grid-column:9/11;
+      grid-column: 9/11;
+    }
+
+
+    .primary-green {
+      color: var(--primary-green)
+    }
+
+    .primary-orange {
+      color: var(--primary-orange);
+    }
+
+
+   h1 {
+     color: var(--primary-green);
+   }
+    @media screen and (min-width: 500px) {
+      div.banner-item-2 {
+        grid-template-columns: 2/9;
+      }
     }
   </style>
 
@@ -62,10 +89,10 @@
         <div class="banner-container">
           <div class="banner-item-1">
             <img src='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'
-            alt="gravatar image of tomgdow">
+              alt="gravatar image of tomgdow">
           </div>
         </div>
-        <div class="banner-item-2">Welcome from tomgdow</div>
+        <div class="banner-item-2">Welcome from <span class="primary-orange">&nbsp;tomgdow</span></div>
       </div>
       <div class="grid-item-2"></div>
       <div class="grid-item-3">
