@@ -7,10 +7,11 @@
   <title>tomgdow</title>
   <link rel='icon' type='image/x-icon' href='https://s.gravatar.com/avatar/1670879794aed7c23742e5b1f759be94?s=40'>
   <style>
- :root {
-   --primary-green: #18836f;
-   --primary-orange: orange;
- }
+    :root {
+      --primary-green: #18836f;
+      --primary-orange: orange;
+    }
+
     div.container {
       width: 80%;
       /* background-color: red; */
@@ -31,7 +32,6 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       justify-content: center;
-      max-height: 40px;
     }
 
     .banner-item-1 {
@@ -44,7 +44,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
 
     }
 
@@ -69,13 +69,24 @@
       color: var(--primary-orange);
     }
 
+    h1 {
+      color: var(--primary-green);
+    }
 
-   h1 {
-     color: var(--primary-green);
-   }
+    #banner_part_first {
+      display: none;
+    }
+    div.site-container div{
+      margin-bottom: 2vh;
+    }
+
     @media screen and (min-width: 500px) {
       div.banner-item-2 {
         grid-template-columns: 2/9;
+      }
+
+      #banner_part_first {
+        display: inline;
       }
     }
   </style>
@@ -92,34 +103,40 @@
               alt="gravatar image of tomgdow">
           </div>
         </div>
-        <div class="banner-item-2">Welcome from <span class="primary-orange">&nbsp;tomgdow</span></div>
+        <div class="banner-item-2">
+          <span id="banner_part_first">Welcome from</span>
+          <span class="primary-orange">&nbsp;tomgdow</span>
+        </div>
       </div>
       <div class="grid-item-2"></div>
       <div class="grid-item-3">
         <h1>Some Sites</h1>
-        <div>
-          <a href="https://rme.tomgdow.com">rme (CSS Tips)</a>
+        <div class="site-container">
+          <div>
+            <a href="https://rme.tomgdow.com">rme (CSS Tips)</a>
+          </div>
+          <div>
+            <a href="http://sasstips.tomgdow.com">Sass Tips</a>
+          </div>
+          <div>
+            <a href="https://testwebsite.tomgdow.com">testwebsite</a>
+          </div>
+          <div>
+            <a href="https://github.com/tomGdow">github (tomgdow)</a>
+          </div>
+          <div>
+            <a href="https://tomgdowtips.firebaseapp.com/">tomgdowtips</a>
+          </div>
+          <div>
+            <a href="https://fuzzy.tomgdow.com/">Fuzzy Sort</a>
+          </div>
+          <div>
+            <a href="https://tomgdow.github.io/basicAjaxExample/">Simple Ajax Request</a>
+          </div>
         </div>
-        <div>
-          <a href="http://sasstips.tomgdow.com">Sass Tips</a>
-        </div>
-        <div>
-          <a href="https://testwebsite.tomgdow.com">testwebsite</a>
-        </div>
-        <div>
-          <a href="https://github.com/tomGdow">github (tomgdow)</a>
-        </div>
-        <div>
-          <a href="https://tomgdowtips.firebaseapp.com/">tomgdowtips</a>
-        </div>
-        <div>
-          <a href="https://fuzzy.tomgdow.com/">Fuzzy Sort</a>
-        </div>
-        <div>
-          <a href="https://tomgdow.github.io/basicAjaxExample/">Simple Ajax Request</a>
-        </div>
+        <div class="grid-item-4"></div>
+
       </div>
-      <div class="grid-item-4"></div>
     </div>
   </div>
 </body>
